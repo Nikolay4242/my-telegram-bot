@@ -16,7 +16,7 @@ ADMIN_USER_IDS      = [int(x) for x in os.getenv('ADMIN_USER_IDS','').split(',')
 SECRET_START_TOKEN  = os.getenv('SECRET_START_TOKEN', '452700')
 REPORT_DIR          = 'reports'
 
-# Создадим папку для отчётов, если её нет
+
 os.makedirs(REPORT_DIR, exist_ok=True)
 
 # Инициализация бота и базы
